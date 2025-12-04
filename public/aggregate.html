@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta tag ensures that the website renders correctly across different device sizes, enhancing mobile responsiveness. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the external CSS stylesheet. Uncomment if you wish to customize or add styling. -->
+    <!-- <link rel="stylesheet" href="styles.css">   -->
+
+    <title>Aggregate Page</title>
+</head>
+<body id="aggregationPage">
+
+  <h2>Show Business_LocatedIn Table</h2>
+  <table id="businessTable" border="1">
+    <thead>
+      <tr>
+        <th>license_number</th>
+        <th>name</th>
+        <th>rating</th>
+        <th>phone_number</th>
+        <th>postal_code</th>
+        <th>street_address</th>
+        <th>unit_number</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  
+
+ 
+  <h2>Show Location1 Table</h2>
+  <table id="locationTable" border="1">
+    <thead>
+      <tr>
+        <th>postal_code</th>
+        <th>city</th>
+        <th>province</th>
+        <th>country</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  
+  <h2>Show Restaurant Table</h2>
+  <table id="restaurantTable" border="1">
+    <thead>
+      <tr>
+        <th>cuisine</th>
+        <th>license_number</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+    <h2> Nested aggregation </h2>
+    <form id="aggregationForm">
+       <p>Click the button to find cuisines in local city (Vancouver) that has average rating higher than average rating of all local restaurants.</p>
+        <button type="submit"> Aggregate </button> <br>
+
+    </form>
+    <div id="aggregationMsg"></div>
+
+    <br><hr><br> <!-- Horizontal Rule (水平线) ========================================================================= -->
+    <!-- ===================================================================================== -->
+    <h2>Show Aggregation Table</h2>
+  <table id="resultTableDisplay" border="1">
+    <thead>
+      <tr>
+        <th>cuisine</th>
+        <th>AVG(rating)</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+
+    <!-- External JavaScript file that contains the functionality/logic for the operations above. -->
+    <script src="scripts.js"></script>
+</body>
+</html>

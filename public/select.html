@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta tag ensures that the website renders correctly across different device sizes, enhancing mobile responsiveness. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the external CSS stylesheet. Uncomment if you wish to customize or add styling. -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Select Page</title>
+</head>
+<body id="selectionPage">
+
+    <!-- Show 'Demotable'. 
+        Data will be fetched and inserted here dynamically using JavaScript. -->
+        <h2>Show Badge Table</h2>
+        <table id="badgeTable" border="1">
+            <thead> <!-- Table Head -->
+                <tr> <!-- Table Row -->
+                    <!--Table head, need to be adjusted accordingly to align with your own.-->
+                    <th>badgeID</th>
+                    <th>name</th>
+                    <th>badge_level</th>
+                    <th>description</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    
+        <br><hr><br> <!-- ========================================================================= -->
+    
+
+    <h2>Select Values</h2>
+<form id="selectTable">
+    <div class="selectTable">
+        
+        <label for="selectedAttributes"><h3>Choose an attribute:</h3></label>
+        
+        <div id="conditionsContainer"></div>
+        
+        <button type="button" id="addConditionBtn">+</button>
+        <br><br>
+        <button type="submit">Select</button>
+
+    </div>
+</form>
+
+<div id="selectResultMsg"></div>
+
+<br><hr><br> <!-- Horizontal Rule (水平线) ========================================================================= -->
+
+<h2>Show Selected Table</h2>
+<table id="resultTableDisplay" border="1">
+<thead>
+  <tr>
+    <th>badgeID</th>
+    <th>name</th>
+    <th>badge_level</th>
+    <th>description</th>
+  </tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<!-- ===================================================================================== -->
+<!-- External JavaScript file that contains the functionality/logic for the operations above. -->
+<script src="scripts.js"></script>
+</body>
+</html>

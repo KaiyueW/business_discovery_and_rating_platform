@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta tag ensures that the website renders correctly across different device sizes, enhancing mobile responsiveness. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the external CSS stylesheet. Uncomment if you wish to customize or add styling. -->
+    <!-- <link rel="stylesheet" href="styles.css">   -->
+
+    <title>Project Page</title>
+</head>
+<body id="projectPage">
+
+    <!-- Show 'Demotable'. 
+        Data will be fetched and inserted here dynamically using JavaScript. -->
+        <h2>Show Coupon_Use Table</h2>
+        <table id="tableDisplay" border="1">
+            <thead> <!-- Table Head -->
+                <tr> <!-- Table Row -->
+                    <!--Table head, need to be adjusted accordingly to align with your own.-->
+                    <th>couponID</th>
+                    <th>discount_amount</th>
+                    <th>expiry_date</th>
+                    <th>userID</th>
+                    <th>license_number</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    
+        <br><hr><br> <!-- ========================================================================= -->
+    
+
+        <form id="projectForm">
+            <h3>Choose the columns to project:</h3><br>
+          
+            <label class="option">
+              <input type="checkbox" name="attribute" value="couponID">
+              couponID
+            </label><br>
+          
+            <label class="option">
+              <input type="checkbox" name="attribute" value="discount_amount">
+              discount_amount
+            </label><br>
+          
+            <label class="option">
+              <input type="checkbox" name="attribute" value="expiry_date">
+              expiry_date
+            </label><br>
+          
+            <label class="option">
+              <input type="checkbox" name="attribute" value="userID">
+              userID
+            </label><br>
+          
+            <label class="option">
+              <input type="checkbox" name="attribute" value="license_number">
+              license_number
+            </label><br><br>
+          
+            <button type="submit">Project</button>
+          </form>
+          
+
+    <div id="projectCouponMsg"></div>
+
+    <br><hr><br> <!-- Horizontal Rule (水平线) ========================================================================= -->
+    <!-- ===================================================================================== -->
+    <h2>Show Projection Table</h2> <!-- 需要 JS写-->
+  <table id="resultTableDisplay" border="1">
+    <thead>
+      <tr>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+    <!-- ===================================================================================== -->
+    <!-- External JavaScript file that contains the functionality/logic for the operations above. -->
+    <script src="scripts.js"></script>
+</body>
+</html>

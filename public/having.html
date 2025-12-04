@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta tag ensures that the website renders correctly across different device sizes, enhancing mobile responsiveness. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the external CSS stylesheet. Uncomment if you wish to customize or add styling. -->
+    <!-- <link rel="stylesheet" href="styles.css">   -->
+
+    <title>having Page</title>
+</head>
+<body id="havingPage">
+
+  <h2>Show Review_BelongTo_Write Table</h2>
+  <table id="havingTable" border="1">
+    <thead>
+      <tr>
+        <th>reviewID</th>
+        <th>review_date</th>
+        <th>rating</th>
+        <th>text</th>
+        <th>license_number</th>
+        <th>userID</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+    
+        <br><hr><br> <!-- ========================================================================= -->
+    
+
+        <h2> Having </h2>
+        <form id="havingAggregationForm">
+           <p>Click the button to see users who have written at least 2 reviews.</p>
+            <button type="submit"> Having </button> <br>
+    
+        </form>
+        <div id="havingMsg"></div>
+
+    <br><hr><br> <!-- Horizontal Rule (水平线) ========================================================================= -->
+
+    <h2>Show Table applying Having</h2>
+  <table id="resultTableDisplay" border="1">
+    COUNT(*) indicates the number of reviews written by the user.
+    <thead>
+      <tr>
+        <th>userID</th>
+        <th>COUNT(*)</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+    <!-- ===================================================================================== -->
+    <!-- External JavaScript file that contains the functionality/logic for the operations above. -->
+    <script src="scripts.js"></script>
+</body>
+</html>

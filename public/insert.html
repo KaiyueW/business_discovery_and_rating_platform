@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta tag ensures that the website renders correctly across different device sizes, enhancing mobile responsiveness. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the external CSS stylesheet. Uncomment if you wish to customize or add styling. -->
+    <!-- <link rel="stylesheet" href="styles.css">   -->
+
+    <title>Insert Page</title>
+</head>
+<body id="insertPage">
+
+    <!-- Show 'Demotable'. 
+        Data will be fetched and inserted here dynamically using JavaScript. -->
+        <h2>Show Dish_Cook Table</h2>
+        <table id="tableDisplay" border="1">
+            <thead> <!-- Table Head -->
+                <tr> <!-- Table Row -->
+                    <!--Table head, need to be adjusted accordingly to align with your own.-->
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Dietary Tag</th>
+                    <th>License Number</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    
+        <br><hr><br> <!-- ========================================================================= -->
+    
+
+    <h2> Insert Values </h2>
+    <form id="insertTable">
+        Name: <input type="text" id="insertName" placeholder="Enter Name" maxlength="100" required> <br><br> <!--Line Break-->
+        Price: <input type="number" id="insertPrice" placeholder="Enter Price" > <br><br>
+        Dietary Tag: <input type="text" id="insertDietaryTag" placeholder="Enter Dietary Tag" maxlength="50"> <br><br>
+        License Number: <input type="number" id="insertLicenseNumber" placeholder="Enter License Number" required> <br><br>
+        Description: <input type="text" id="insertDescription" placeholder="Enter Description" maxlength="255"> <br><br>
+
+        <button type="submit"> insert </button> <br>
+    </form>
+    <div id="insertResultMsg"></div>
+
+    <br><hr><br> <!-- Horizontal Rule (水平线) ========================================================================= -->
+    <!-- ===================================================================================== -->
+    <!-- External JavaScript file that contains the functionality/logic for the operations above. -->
+    <script src="scripts.js"></script>
+</body>
+</html>

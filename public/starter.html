@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta tag ensures that the website renders correctly across different device sizes, enhancing mobile responsiveness. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the external CSS stylesheet. Uncomment if you wish to customize or add styling. -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Starter Page</title>
+</head>
+<body>
+    <!-- ===================================================================================== -->
+    <!-- Display the current status of the database connection. 
+         !!HERE TO HELP U DEBUGGING, NOT REQUIRED IN YOUR OWN PROJECT!!
+         -->
+    <h1>Database Connection Status: 
+        <!-- An in-line placeholder to display connection status. -->
+        <span id="dbStatus"> </span>
+        <!-- A loading GIF, will be hided once get the status. -->
+        <img id="loadingGif" class="loading-gif" src="loading_100px.gif" alt="Loading...">
+    </h1>
+
+    <br><hr><br> <!-- ========================================================================= -->
+
+    <h2>Reset Tables</h2>  <!--定义一个二级标题。-->
+    <p>If you wish to reset all tables press on the reset button. If this is the first time you're running this page, you MUST use reset.</p>
+    <!--定义一个段落。-->
+    <button id="resetAllTables"> Reset </button> <br> <!--插入一个强制换行。-->
+    <!-- A placeholder to display messages related to the reset operation. -->
+    <div id="resetResultMsg"></div> <!--定义一个区块/容器, 不带任何预设的语义, 无论输出结果是纯文本、一个带样式的错误信息、或者未来可能包含其他 HTML 元素-->
+
+    <br><hr><br> <!-- hr：绘制一条水平线。========================================================================= -->
+
+    <!-- screenshot -->
+    <h2> Insert Values into Dish_Cook </h2>
+    <button id="insertPageChange" onclick="location.href='insert.html'"> Insert</button> <br> 
+
+    <br><hr><br> <!-- ========================================================================= -->
+    <h2> Update Values in App_User </h2>
+    <button id="updatePageChange" onclick="location.href='update.html'"> Update </button> <br> 
+
+    <br><hr><br>
+
+    <h2> Delete Values in Badge </h2>
+    <button id="deletePageChange" onclick="location.href='delete.html'"> Delete </button> <br> 
+
+    <br><hr><br>
+
+    <h2> Select Values in Badge </h2>
+    <button id="selectPageChange" onclick="location.href='select.html'"> Select </button> <br> 
+
+    <br><hr><br>
+
+    <h2> Project Values in Coupon_Use </h2>
+    <button id="projectPageChange" onclick="location.href='projection.html'"> Project </button> <br> 
+
+    <br><hr><br>
+
+    <h2> Join Values in Business_LocatedIn and Review_BelongTo_Write </h2>
+    <button id="joinPageChange" onclick="location.href='join.html'"> Join </button> <br> 
+
+    <br><hr><br>
+
+    <h2> GroupBy star of Hotel</h2>
+    <button id="groupbyPageChange" onclick="location.href='groupBy.html'"> GroupBy </button> <br> 
+
+    <br><hr><br>
+    
+    <h2> Having applied in Review_BelongTo_Write</h2>
+    <button id="havingPageChange" onclick="location.href='having.html'"> Having </button> <br> 
+
+    <br><hr><br>
+
+    <h2>  Nested aggregation to find better cuisines </h2>
+    <button id="aggregationPageChange" onclick="location.href='aggregate.html'"> Aggregate </button> <br> 
+    <br><hr><br>
+
+    <h2>  Division in Achieve </h2>
+    <button id="divisionPageChange" onclick="location.href='division.html'"> Division </button> <br> 
+    <br><hr><br>
+    
+
+    <!-- ===================================================================================== -->
+    <!-- External JavaScript file that contains the functionality/logic for the operations above. -->
+    <script src="scripts.js"></script>
+</body>
+</html>

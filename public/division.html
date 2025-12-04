@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta tag ensures that the website renders correctly across different device sizes, enhancing mobile responsiveness. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the external CSS stylesheet. Uncomment if you wish to customize or add styling. -->
+    <!-- <link rel="stylesheet" href="styles.css">   -->
+
+    <title>Division Page</title>
+</head>
+<body id="divisionPage">
+
+  <h2>Show Achieve Table</h2>
+  <table id="achieveTable" border="1">
+    <thead>
+      <tr>
+        <th>badgeID</th>
+        <th>userID</th>
+        <th>achieve_date</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  
+    <h2> Division </h2>
+    <form id="divisionForm">
+       <p>Click the button to find the user IDs that have achieved all badges.</p>
+        <button type="submit"> Division </button> <br>
+
+    </form>
+    <div id="divisionMsg"></div>
+
+    <br><hr><br> <!-- Horizontal Rule (水平线) ========================================================================= -->
+    <!-- ===================================================================================== -->
+    <h2>Show Division Table</h2>
+  <table id="resultTableDisplay" border="1">
+    <thead>
+      <tr>
+        <th>userID</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+
+    <!-- External JavaScript file that contains the functionality/logic for the operations above. -->
+    <script src="scripts.js"></script>
+</body>
+</html>

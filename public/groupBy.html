@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta tag ensures that the website renders correctly across different device sizes, enhancing mobile responsiveness. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the external CSS stylesheet. Uncomment if you wish to customize or add styling. -->
+    <!-- <link rel="stylesheet" href="styles.css">   -->
+
+    <title>groupBy Page</title>
+</head>
+<body id="groupByPage">
+
+  <h2>Show Business_LocatedIn Table</h2>
+  <table id="businessOriginal" border="1">
+    <thead>
+      <tr>
+        <th>license_number</th>
+        <th>name</th>
+        <th>rating</th>
+        <th>phone_number</th>
+        <th>postal_code</th>
+        <th>street_address</th>
+        <th>unit_number</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  
+
+ 
+  <h2>Show Hotel Table</h2>
+  <table id="hotelOriginal" border="1">
+    <thead>
+      <tr>
+        <th>star</th>
+        <th>license_number</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+    
+        <br><hr><br> <!-- ========================================================================= -->
+    
+
+        <h2> Group By </h2>
+        <form id="groupByAggregationForm">
+           <p>Click the button to get hotel average rating group by star.</p>
+            <button type="submit"> GroupBy </button> <br>
+    
+        </form>
+        <div id="groupByMsg"></div>
+
+    <br><hr><br> <!-- Horizontal Rule (水平线) ========================================================================= -->
+
+    <h2>Show Table Group By star</h2>
+  <table id="resultTableDisplay" border="1">
+    <thead>
+      <tr>
+        <th>star</th>
+        <th>AVG(rating)</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+    <!-- ===================================================================================== -->
+    <!-- External JavaScript file that contains the functionality/logic for the operations above. -->
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta tag ensures that the website renders correctly across different device sizes, enhancing mobile responsiveness. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the external CSS stylesheet. Uncomment if you wish to customize or add styling. -->
+    <!-- <link rel="stylesheet" href="styles.css">   -->
+
+    <title>Update Page</title>
+</head>
+
+<body id="updatePage">
+
+    <!-- Show 'Demotable'. 
+        Data will be fetched and inserted here dynamically using JavaScript. -->
+    <h2>Show App_User Table</h2>
+    <table id="tableDisplay" border="1">
+        <thead> <!-- Table Head -->
+            <tr> <!-- Table Row -->
+                <!--Table head, need to be adjusted accordingly to align with your own.-->
+                <th>Phone Number</th>
+                <th>Nickname</th>
+                <th>Following Number</th>
+                <th>Follower Number</th>
+                <th>Email</th>
+                <th>User ID</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <br>
+    <hr><br> <!-- ========================================================================= -->
+
+    <h2>Update Values</h2>
+    <p>The values are case sensitive and if you enter in the wrong case, the update statement will not do anything.</p>
+    <hr>
+    <form id="updatePhoneForm">
+        <h3>Update Phone Number</h3>
+        Target User ID: <input type="number" id="updatePhoneTargetUserId" placeholder="Enter target user ID" required> <br><br>
+        New Phone Number: <input type="number" id="updateNewPhoneNumber" placeholder="Enter new number"> <br><br>
+    
+        <button type="submit"> Update </button> <br>
+    </form>
+    <div id="updateResultMsg1"></div>
+    
+    <br><hr><br>
+    
+    <form id="updateNicknameForm">
+        <h3>Update Nickname</h3>
+        Target User ID: <input type="number" id="updateNicknameTargetUserId" placeholder="Enter target user ID" required> <br><br>
+        New Nickname: <input type="text" id="updateNewNickname" placeholder="Enter new nickname" maxlength="100"> <br><br>
+    
+        <button type="submit"> Update </button> <br>
+    </form>
+    <div id="updateResultMsg2"></div>
+    
+    <br><hr><br>
+    
+    <form id="updateEmailForm">
+        <h3>Update Email</h3>
+        Target User ID: <input type="number" id="updateEmailTargetUserId" placeholder="Enter target user ID" required> <br><br>
+        New Email: <input type="email" id="updateNewEmail" placeholder="Enter new email" maxlength="100"> <br><br>
+    
+        <button type="submit"> Update </button> <br>
+    </form>
+    <!-- A placeholder to display messages related to the update operation. -->
+    <div id="updateResultMsg3"></div>
+
+    <br><hr><br> <!-- Horizontal Rule (水平线) ========================================================================= -->
+    <!-- ===================================================================================== -->
+    <!-- External JavaScript file that contains the functionality/logic for the operations above. -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
