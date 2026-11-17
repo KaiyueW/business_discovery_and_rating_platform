@@ -63,20 +63,6 @@ The database also enforces its rules, and the pages show the resulting errors:
 
 Deleting a business removes its dishes, reviews and hotel or restaurant record. Deleting a user removes their posts, reviews and badges.
 
-## Running it yourself
-
-You need Node.js, an Oracle database you can reach, and the Oracle Instant Client.
-
-1. **Install dependencies**
-   ```bash
-   npm install
-   ```
-2. **Set your credentials** in `.env`: `ORACLE_USER`, `ORACLE_PASS` and `PORT`. Leave `ORACLE_HOST`, `ORACLE_PORT` and `ORACLE_DBNAME` as provided by the course. Never commit real credentials to a public repository.
-3. **Start the server**
-   - *On the UBC undergrad server:* run `./remote-start.sh`. It finds a free port, updates `.env` and starts `node server.js`.
-   - *On your own computer:* run the tunnel and setup scripts for your system in `scripts/mac` or `scripts/win` (`db-tunnel`, `instantclient-setup`, then the generated `local-start` script), or follow the course instructions for connecting to the UBC database.
-4. **Open the app** at `http://localhost:<PORT>/` (the port is printed when the server starts). If this is your first run, press **Reset** on the starter page to create and fill the tables.
-
 ## API
 
 All routes are in `appController.js`.
